@@ -58,10 +58,10 @@ class WebProductInformation extends StatelessWidget {
       ),
      SizedBox(height: 5),
 
-     product.rating != null ? RatingBar(
-       rating: product.rating.length > 0 ? double.parse(product.rating[0].average) : 0.0,
-       size: Dimensions.PADDING_SIZE_DEFAULT,
-     ) : SizedBox(),
+    //  product.rating != null ? RatingBar(
+    //    rating: product.rating.length > 0 ? double.parse(product.rating[0].average) : 0.0,
+    //    size: Dimensions.PADDING_SIZE_DEFAULT,
+    //  ) : SizedBox(),
 
       const SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
       Text(

@@ -353,11 +353,11 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                                 ]),
                                 SizedBox(height: 10),
 
-                                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                                  Text(getTranslated('tax', context), style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
-                                  Text('(+) ${PriceConverter.convertPrice(context, _tax)}', style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
-                                ]),
-                                SizedBox(height: 10),
+                                // Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                                //   Text(getTranslated('tax', context), style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
+                                //   Text('(+) ${PriceConverter.convertPrice(context, _tax)}', style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
+                                // ]),
+                                // SizedBox(height: 10),
 
                                 Padding(
                                   padding: EdgeInsets.symmetric(vertical: Dimensions.PADDING_SIZE_SMALL),
@@ -736,11 +736,11 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                     ]),
                     SizedBox(height: 10),
 
-                    Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                      Text(getTranslated('tax', context), style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
-                      Text('(+) ${PriceConverter.convertPrice(context, _tax)}', style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
-                    ]),
-                    SizedBox(height: 10),
+                    // Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                    //   Text(getTranslated('tax', context), style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
+                    //   Text('(+) ${PriceConverter.convertPrice(context, _tax)}', style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
+                    // ]),
+                    // SizedBox(height: 10),
 
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: Dimensions.PADDING_SIZE_SMALL),

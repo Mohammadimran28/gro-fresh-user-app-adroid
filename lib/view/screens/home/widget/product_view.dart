@@ -88,7 +88,7 @@ class _ProductViewState extends State<ProductView> {
                         mainAxisSpacing: ResponsiveHelper.isDesktop(context) ? 13 : 5,
                         childAspectRatio:ResponsiveHelper.isDesktop(context) ? (1/1.5) : 3.0,
                         crossAxisCount: ResponsiveHelper.isDesktop(context) ? 5 : ResponsiveHelper.isTab(context) ? 2 : 1),
-                    itemCount: productList.length,
+                    itemCount: 5,
                     padding: EdgeInsets.symmetric(horizontal: Dimensions.PADDING_SIZE_SMALL,vertical: Dimensions.PADDING_SIZE_LARGE),
                     // padding: EdgeInsets.symmetric(horizontal: Dimensions.PADDING_SIZE_DEFAULT,vertical: Dimensions.PADDING_SIZE_DEFAULT),
                     physics: NeverScrollableScrollPhysics(),

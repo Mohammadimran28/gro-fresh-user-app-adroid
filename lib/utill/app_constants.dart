@@ -2,9 +2,9 @@ import 'package:flutter_grocery/data/model/response/language_model.dart';
 import 'images.dart';
 
 class AppConstants {
-  static const String APP_NAME = 'Demo';
-  static const double APP_VERSION = 5.1;
-  static const String BASE_URL = 'https://sixamtech.tk';
+  static const String APP_NAME = 'Baba Chicken';
+  static const double APP_VERSION = 1.1;
+  static const String BASE_URL = 'https://admin.babachicken.in';
   static const String CONFIG_URI = '/api/v1/config';
   static const String BANNER_URI = '/api/v1/banners';
   static const String CATEGORY_URI = '/api/v1/categories';

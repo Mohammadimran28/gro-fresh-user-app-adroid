@@ -155,7 +155,7 @@ class ProductWidget extends StatelessWidget {
                         ),
                         child: Row(children: [
                           Container(
-                            height: 85,
+                            height: 75,
                             width: 85,
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -465,9 +465,9 @@ class ProductWidget extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  flex: _width < 425 ? 6 : 4,
+                  flex: _width < 425 ? 6 : 6,
                   child: Container(
-                    padding: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(5),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -490,7 +490,7 @@ class ProductWidget extends StatelessWidget {
                           '${product.capacity} ${product.unit}',
                           style: poppinsRegular.copyWith(
                               fontSize: Dimensions.FONT_SIZE_SMALL),
-                          maxLines: 2,
+                          maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
                         Text(
@@ -509,7 +509,44 @@ class ProductWidget extends StatelessWidget {
                                   decoration: TextDecoration.lineThrough,
                                 ),
                               )
-                            : SizedBox(),
+                        // Flexible(
+                        //   child: Row(
+                        //     crossAxisAlignment: CrossAxisAlignment.center,
+                        //     children: [
+                        //       product.discount > 0
+                        //           ? Text(
+                        //               PriceConverter.convertPrice(
+                        //                   context, product.price),
+                        //               style: poppinsRegular.copyWith(
+                        //                   color: ColorResources.RED_COLOR,
+                        //                   fontSize: Dimensions.FONT_SIZE_SMALL,
+                        //                   decoration:
+                        //                       TextDecoration.lineThrough
+                        //               ),
+                        //               overflow: TextOverflow.ellipsis,
+                        //               maxLines: 1,
+                        //             )
+                        //           : SizedBox(),
+                        //       product.discount > 0
+                        //           ? SizedBox(
+                        //               width: Dimensions.PADDING_SIZE_SMALL)
+                        //           : SizedBox(),
+                        //       Text(
+                        //         PriceConverter.convertPrice(
+                        //           context,
+                        //           product.price,
+                        //           discount: product.discount,
+                        //           discountType: product.discountType,
+                        //         ),
+                        //         style: poppinsBold.copyWith(
+                        //             fontSize: Dimensions.FONT_SIZE_LARGE),
+                        //         overflow: TextOverflow.ellipsis,
+                        //         maxLines: 1,
+                        //       ),
+                        //     ],
+                        //   ),
+                        // ),
+                        : SizedBox(),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -567,23 +604,29 @@ class ProductWidget extends StatelessWidget {
                                           );
                                         }
                                       },
-
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         children: [
                                           Text(
-                                            getTranslated('add_to_cart', context),
-                                            style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_DEFAULT, color: Theme.of(context).primaryColor),
+                                            getTranslated(
+                                                'add_to_cart', context),
+                                            style: poppinsRegular.copyWith(
+                                                fontSize: Dimensions
+                                                    .FONT_SIZE_DEFAULT,
+                                                color: Theme.of(context)
+                                                    .primaryColor),
                                             maxLines: 1,
                                             overflow: TextOverflow.ellipsis,
                                           ),
-                                          const SizedBox(width: Dimensions.PADDING_SIZE_EXTRA_SMALL),
-
+                                          const SizedBox(
+                                              width: Dimensions
+                                                  .PADDING_SIZE_EXTRA_SMALL),
                                           SizedBox(
                                             height: 16,
                                             width: 16,
-                                            child: Image.asset(Images.shopping_cart_bold),
+                                            child: Image.asset(
+                                                Images.shopping_cart_bold),
                                           ),
                                         ],
                                       ),

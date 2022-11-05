@@ -73,12 +73,12 @@ class ProductTitleView extends StatelessWidget {
               ),
             ),
 
-            product.rating != null ? Padding(
-              padding: const EdgeInsets.symmetric(vertical: Dimensions.PADDING_SIZE_EXTRA_SMALL),
-              child: RatingBar(
-                rating: product.rating.length > 0 ? double.parse(product.rating[0].average) : 0.0, size: Dimensions.PADDING_SIZE_DEFAULT,
-              ),
-            ) : SizedBox(),
+            // product.rating != null ? Padding(
+            //   padding: const EdgeInsets.symmetric(vertical: Dimensions.PADDING_SIZE_EXTRA_SMALL),
+            //   child: RatingBar(
+            //     rating: product.rating.length > 0 ? double.parse(product.rating[0].average) : 0.0, size: Dimensions.PADDING_SIZE_DEFAULT,
+            //   ),
+            // ) : SizedBox(),
 
             //Product Price
             Text(
