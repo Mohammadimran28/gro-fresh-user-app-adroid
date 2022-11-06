@@ -128,6 +128,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     },
                                     initialSelection: _countryDialCode,
                                     favorite: [_countryDialCode],
+                                    countryFilter: [_countryDialCode],
+                                    enabled: false,
                                     showDropDownButton: true,
                                     padding: EdgeInsets.zero,
                                     showFlagMain: true,

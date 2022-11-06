@@ -110,6 +110,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   initialSelection: _countryDialCode,
                                   favorite: [_countryDialCode],
                                   showDropDownButton: true,
+                                  countryFilter: [_countryDialCode],
+                                  enabled: false,
                                   padding: EdgeInsets.zero,
                                   showFlagMain: true,
                                   textStyle: TextStyle(color: Theme.of(context).textTheme.headline1.color),
