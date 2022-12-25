@@ -8,7 +8,6 @@ import 'package:flutter_grocery/utill/color_resources.dart';
 import 'package:flutter_grocery/utill/dimensions.dart';
 import 'package:flutter_grocery/utill/styles.dart';
 import 'package:flutter_grocery/view/base/custom_snackbar.dart';
-import 'package:flutter_grocery/view/base/rating_bar.dart';
 import 'package:flutter_grocery/view/base/wish_button.dart';
 import 'package:provider/provider.dart';
 

@@ -14,7 +14,7 @@ import 'package:flutter_grocery/utill/images.dart';
 import 'package:flutter_grocery/utill/styles.dart';
 import 'package:flutter_grocery/view/base/custom_snackbar.dart';
 import 'package:flutter_grocery/view/base/on_hover.dart';
-import 'package:flutter_grocery/view/base/rating_bar.dart';
+// import 'package:flutter_grocery/view/base/rating_bar.dart';
 import 'package:provider/provider.dart';
 
 import 'wish_button.dart';
@@ -509,44 +509,44 @@ class ProductWidget extends StatelessWidget {
                                   decoration: TextDecoration.lineThrough,
                                 ),
                               )
-                        // Flexible(
-                        //   child: Row(
-                        //     crossAxisAlignment: CrossAxisAlignment.center,
-                        //     children: [
-                        //       product.discount > 0
-                        //           ? Text(
-                        //               PriceConverter.convertPrice(
-                        //                   context, product.price),
-                        //               style: poppinsRegular.copyWith(
-                        //                   color: ColorResources.RED_COLOR,
-                        //                   fontSize: Dimensions.FONT_SIZE_SMALL,
-                        //                   decoration:
-                        //                       TextDecoration.lineThrough
-                        //               ),
-                        //               overflow: TextOverflow.ellipsis,
-                        //               maxLines: 1,
-                        //             )
-                        //           : SizedBox(),
-                        //       product.discount > 0
-                        //           ? SizedBox(
-                        //               width: Dimensions.PADDING_SIZE_SMALL)
-                        //           : SizedBox(),
-                        //       Text(
-                        //         PriceConverter.convertPrice(
-                        //           context,
-                        //           product.price,
-                        //           discount: product.discount,
-                        //           discountType: product.discountType,
-                        //         ),
-                        //         style: poppinsBold.copyWith(
-                        //             fontSize: Dimensions.FONT_SIZE_LARGE),
-                        //         overflow: TextOverflow.ellipsis,
-                        //         maxLines: 1,
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
-                        : SizedBox(),
+                            // Flexible(
+                            //   child: Row(
+                            //     crossAxisAlignment: CrossAxisAlignment.center,
+                            //     children: [
+                            //       product.discount > 0
+                            //           ? Text(
+                            //               PriceConverter.convertPrice(
+                            //                   context, product.price),
+                            //               style: poppinsRegular.copyWith(
+                            //                   color: ColorResources.RED_COLOR,
+                            //                   fontSize: Dimensions.FONT_SIZE_SMALL,
+                            //                   decoration:
+                            //                       TextDecoration.lineThrough
+                            //               ),
+                            //               overflow: TextOverflow.ellipsis,
+                            //               maxLines: 1,
+                            //             )
+                            //           : SizedBox(),
+                            //       product.discount > 0
+                            //           ? SizedBox(
+                            //               width: Dimensions.PADDING_SIZE_SMALL)
+                            //           : SizedBox(),
+                            //       Text(
+                            //         PriceConverter.convertPrice(
+                            //           context,
+                            //           product.price,
+                            //           discount: product.discount,
+                            //           discountType: product.discountType,
+                            //         ),
+                            //         style: poppinsBold.copyWith(
+                            //             fontSize: Dimensions.FONT_SIZE_LARGE),
+                            //         overflow: TextOverflow.ellipsis,
+                            //         maxLines: 1,
+                            //       ),
+                            //     ],
+                            //   ),
+                            // ),
+                            : SizedBox(),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
